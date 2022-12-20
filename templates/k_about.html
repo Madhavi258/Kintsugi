@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>KINTSUGI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/slick.css')}}"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/tooplate-simply-amazed.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='fontawesome/css/all.min.css')}}">   
+</head>
+
+<body>
+       <main>
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="{{url_for('static',filename='img/section-1-bg.jpg')}}" id="section-1" style="padding:60px">
+                <div class="container">
+                    <div class="item">
+                        <div class="bg-blue-transparent logo-fa" style="background-color: #887aac; opacity: 0.8;"><span><i class="fas fa-2x fa-star"></i></span> KINTSUGI</div>
+                        <div class="bg-blue-transparent simple" style="background-color: #887aac; opacity: 0.8;"><p>This project is built with an aim of "MENS SANA IN CORPORE SANO" which means a healthy mind in a healthy body.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="work-section section" id="section-2" style="background-color: #aa99d7;">        
+                <div class="container">
+                    <div class="title">
+                        <h2>Our Work</h2>
+                    </div>
+                    <div class="row" style="margin-top:80px;">
+                        <div class="item col-md-4">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-2x fa-database"></i></div>
+                                <h3 style="font-size:25px; color:#6749B9; font-weight: 600;" >01. Data Collection</h3>
+                                <p align="justify" style="font-size:20px; color:#FFF;"> We are using data of Twitter which is open-source. You can also view sample dataset in Data Preview section.</p>
+                            </div>                        
+                        </div>
+                        <div class="item col-md-4 one">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-2x fa-tools"></i></div>
+                                <h3 style="font-size:25px; color:#6749B9; font-weight: 600;">02. Train a Model</h3>
+                                <p align="justify" style="font-size:20px; color:#FFF;">After completion of data pre-processing, final model is stored based on some evaluation criteria.</p>
+                            </div>
+                        </div>
+                        <div class="item col-md-4 two">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-4x fa-caret-right"></i></div>
+                                <h3 style="font-size:25px; color:#6749B9; font-weight: 600;">03. Prediction</h3>
+                                <p align="justify" style="font-size:20px; color:#FFF;">Based on stored model, prediction will be made on user input(unseen data) which you can see in Prediction section of this portal.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+
+            <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="{{url_for('static',filename='img/section-3-1-bg.jpg')}}" id="section-3">
+                <div class="container">
+                    <div class="item" style="margin-bottom: 0;">
+                        <div class="bg-blue-transparent logo-fa" style="background-color: #887aac; opacity: 0.8;"> 
+                            <p align="center" style="font-size:25px; font-family:sans-serif; color:#FFF; padding-top: 15px; padding-bottom: 15px;">
+                                Groupmates
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div align="center" class="mx-auto gallery-slider" >
+                        <figure class="effect-julia item">
+                            <img src="{{url_for('static',filename='img/aayushi.jpg')}}" alt="Image">
+                            <div style="margin-top:10px; margin-bottom:10px; font-size:16px; color:#FFF;">202211025 <br>Aayushi Patel</div>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="{{url_for('static',filename='img/madhavi.jpg')}}" alt="Image">
+                            <div style="margin-top:10px; margin-bottom:10px; font-size:16px; color:#FFF;">202211049 <br>Madhavi Aghera</div>
+                        </figure>                       
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{{url_for('static',filename='js/jquery-3.3.1.min.js')}}" ></script>
+    <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}" ></script>
+    <script src="{{url_for('static',filename='js/jquery.singlePageNav.min.js')}}" ></script>
+    <script src="{{url_for('static',filename='js/slick.js')}}" ></script>
+    <script src="{{url_for('static',filename='js/parallax.min.js')}}" ></script>
+    <script src="{{url_for('static',filename='js/templatemo-script.js')}}" ></script>
+</body>
+</html>
